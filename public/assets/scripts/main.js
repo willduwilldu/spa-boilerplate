@@ -163,7 +163,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>About Page</h1>'
+        // content: '<h1>About Page</h1>'
       });
 
     },

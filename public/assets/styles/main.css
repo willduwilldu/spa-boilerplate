@@ -65,24 +65,52 @@ a {
 
 /* line 68, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .content-container {
-  margin: 0 auto;
+  margin: 50px auto;
   width: 100%;
-  max-width: 910px; }
+  max-width: 1060px; }
   /* line 72, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   .content-container ul {
-    text-align: center;
+    max-width: 450px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     width: 100%; }
     /* line 77, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
     .content-container ul li {
-      display: inline-block;
+      padding-bottom: 15px;
+      display: block;
       text-decoration: none; }
+      /* line 81, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+      .content-container ul li a {
+        text-transform: uppercase;
+        color: #777;
+        font-weight: 700;
+        font-size: 30px; }
+        /* line 86, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+        .content-container ul li a:hover {
+          color: #555; }
+        /* line 88, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+        .content-container ul li a span {
+          color: #aaa;
+          font-size: 16px;
+          font-weight: 500; }
+  /* line 92, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .content-container blockquote {
+    text-align: center;
+    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px; }
+  /* line 100, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .content-container p {
+    padding: 0 100px 15px 100px;
+    line-height: 25px; }
 
-/* line 82, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 105, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .footer {
   padding: 20px; }
-  /* line 85, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 108, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   .footer p {
     margin: 0;
     padding: 0;
