@@ -1,0 +1,101 @@
+
+// -----------------------------
+// Variables
+// -----------------------------
+
+$color: #555
+$lightColor: #efefef
+$darkColor: #333
+
+// -----------------------------
+// Global Styles
+// -----------------------------
+*
+  box-sizing: border-box
+
+body
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  padding: 0
+  margin: 0
+  font-size: 14px
+  color: $color
+
+a
+  text-decoration: none
+  display: inline-block
+  color: $color
+
+// -----------------------------
+// App Specific
+// -----------------------------
+
+.header, .main, .footer
+  width: 100%
+  display: block
+  clear: both
+  float: left
+
+// -----------------------------
+// Header
+// -----------------------------
+
+.header
+  text-align: center
+  padding: 20px
+  border-bottom: 1px solid $lightColor
+  h1
+    font-size: 12px
+    margin-bottom: 20px
+    margin-top: -3px
+
+// -----------------------------
+// Navigation
+// -----------------------------
+
+.nav
+  margin: 0 auto
+  padding: 0
+
+  li
+    margin: 0
+    padding: 0
+    display: inline-block
+    list-style: none
+
+    a
+      padding: 5px 10px
+      color: #777
+      &:hover
+        color: #333
+
+// -----------------------------
+// Main
+// -----------------------------
+
+.main
+  padding: 20px
+  border-bottom: 1px solid $lightColor
+
+.content-container
+  margin: 0 auto
+  ul
+    text-align: center
+    padding: 0
+    margin: 0
+    width: 100%
+    li
+      display: inline-block
+      text-decoration: none
+
+// -----------------------------
+// Footer
+// -----------------------------
+
+.footer
+  padding: 20px
+
+  p
+    margin: 0
+    padding: 0
+    font-size: 12px
+
