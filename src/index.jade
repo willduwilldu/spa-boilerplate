@@ -82,7 +82,26 @@ html
     </div>
 
   script#contact(type="text/template").
-    <div class="page contact">{{{content}}}</div>
+    <div class="page contact">{{{content}}}
+      <div class="content-container">
+        <form action="contact.php" method="post">
+          <span>Your name</span><br>
+          <input type="text" class="name" name="cf_name"><br>
+          <span>Your e-mail</span><br>
+          <input type="text" class="email" name="cf_email"><br>
+          <span>Message</span><br>
+          <textarea class="textarea" name="cf_message"></textarea><br>
+          <input type="submit" value="Send">
+          <input type="reset" value="Clear">
+        </form>
+      </div>
+    </div>
+
+  script#work-detail(type="text/template").
+    <div class="page contact">{{{content}}}
+      <div class="content-container">
+      </div>
+    </div>
 
   // -----------------------------
   // Libraries
