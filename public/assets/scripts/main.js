@@ -124,7 +124,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>Work Page</h1>'
+        // content: '<h1>Work Page</h1>'
       });
 
     },

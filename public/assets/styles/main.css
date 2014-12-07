@@ -1,8 +1,8 @@
-/* line 7, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 9, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 * {
   box-sizing: border-box; }
 
-/* line 10, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 12, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 0;
@@ -10,71 +10,79 @@ body {
   font-size: 14px;
   color: #555; }
 
-/* line 17, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 19, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 a {
   text-decoration: none;
   display: inline-block;
   color: #555; }
 
-/* line 23, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 25, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .header, .main, .footer {
   width: 100%;
   display: block;
   clear: both;
   float: left; }
 
-/* line 30, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 32, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .header {
   text-align: center;
   padding: 20px;
   border-bottom: 1px solid #efefef; }
-  /* line 34, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 36, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   .header h1 {
     font-size: 12px;
     margin-bottom: 20px;
     margin-top: -3px; }
 
-/* line 40, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 42, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .nav {
   margin: 0 auto;
   padding: 0; }
-  /* line 44, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 46, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   .nav li {
     margin: 0;
     padding: 0;
     display: inline-block;
     list-style: none; }
-    /* line 50, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+    /* line 52, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
     .nav li a {
       padding: 5px 10px;
       color: #777; }
-      /* line 53, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+      /* line 55, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
       .nav li a:hover {
         color: #333; }
 
-/* line 57, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 59, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .main {
-  padding: 20px;
   border-bottom: 1px solid #efefef; }
 
-/* line 61, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 62, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.home-container {
+  height: 400px;
+  background: url("../images/landing-BG.jpg") center;
+  background-color: #fff;
+  background-size: cover; }
+
+/* line 68, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .content-container {
-  margin: 0 auto; }
-  /* line 63, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 910px; }
+  /* line 72, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   .content-container ul {
     text-align: center;
     padding: 0;
     margin: 0;
     width: 100%; }
-    /* line 68, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+    /* line 77, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
     .content-container ul li {
       display: inline-block;
       text-decoration: none; }
 
-/* line 73, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 82, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .footer {
   padding: 20px; }
-  /* line 76, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 85, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   .footer p {
     margin: 0;
     padding: 0;
