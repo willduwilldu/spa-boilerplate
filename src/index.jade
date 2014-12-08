@@ -41,6 +41,20 @@ html
 
       p Will Du Portfolio Copyright &copy; 2014
 
+      ul
+        li
+          a.dribbble(href="https://dribbble.com/willduwilldu")
+            img(src="assets/images/smi-dribbble.png")
+
+        li
+          a.twitter(href="https://twitter.com/willduwilldu")
+            img(src="assets/images/smi-twitter.png")
+
+        li
+          a.github(href="https://github.com/willduwilldu")
+            img(src="assets/images/smi-github.png")
+
+
   // -----------------------------
   // Templates
   // -----------------------------
@@ -85,14 +99,13 @@ html
     <div class="page contact">{{{content}}}
       <div class="content-container">
         <form action="contact.php" method="post">
-          <span>Your name</span><br>
+          <span>Name</span>
           <input type="text" class="name" name="cf_name"><br>
-          <span>Your e-mail</span><br>
+          <span>E-mail</span>
           <input type="text" class="email" name="cf_email"><br>
-          <span>Message</span><br>
+          <span>Message</span>
           <textarea class="textarea" name="cf_message"></textarea><br>
-          <input type="submit" value="Send">
-          <input type="reset" value="Clear">
+          <input class="submit" type="submit" value="Send">
         </form>
       </div>
     </div>

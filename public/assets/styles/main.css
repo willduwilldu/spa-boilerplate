@@ -109,35 +109,72 @@ a {
 
 /* line 104, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 form {
+  width: 320px;
   margin: 0 auto; }
-  /* line 106, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 107, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   form span {
     display: block; }
-  /* line 108, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 109, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   form .name {
     font-size: 14px;
     padding: 3px 7px;
-    width: 300px;
+    width: 100%;
     height: 30px; }
-  /* line 113, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 114, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   form .email {
     font-size: 14px;
     padding: 3px 7px;
-    width: 300px;
+    width: 100%;
     height: 30px; }
-  /* line 118, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 119, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   form .textarea {
+    resize: none;
+    border: 1px solid #ccc;
     font-size: 14px;
     padding: 3px 7px;
-    width: 300px;
+    width: 100%;
     height: 150px; }
+  /* line 126, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  form .submit {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    height: 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #2ecc71; }
+    /* line 135, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+    form .submit:hover {
+      background-color: #27ae60; }
 
-/* line 125, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 139, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .footer {
   padding: 20px; }
-  /* line 128, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-  .footer p {
-    text-align: right;
-    margin: 0;
+  /* line 142, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .footer ul {
     padding: 0;
+    margin: 0;
+    display: block;
+    float: right; }
+    /* line 147, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+    .footer ul li {
+      display: inline-block; }
+      /* line 149, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+      .footer ul li .dribbble, .footer ul li .twitter, .footer ul li .github {
+        padding: 0 5px; }
+        /* line 151, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+        .footer ul li .dribbble img, .footer ul li .twitter img, .footer ul li .github img {
+          width: 20px; }
+          /* line 153, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+          .footer ul li .dribbble img:hover, .footer ul li .twitter img:hover, .footer ul li .github img:hover {
+            opacity: 0.8; }
+  /* line 156, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .footer p {
+    display: block;
+    float: right;
+    text-align: right;
+    margin: 0 0 0 20px;
+    padding: 0;
+    line-height: 24px;
     font-size: 12px; }
