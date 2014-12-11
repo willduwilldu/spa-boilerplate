@@ -156,7 +156,7 @@ form {
     float: left;
     width: 50%; }
     /* line 145, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-    .content-container .content-image a img.boqsRender1 {
+    .content-container .content-image a img.side-image {
       padding: 5px;
       border: 1px solid #eee;
       width: 500px; }

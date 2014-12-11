@@ -17,7 +17,11 @@ jQuery(function($) {
       'work': 'work',
       'about': 'about',
       'contact': 'contact',
-      'workBoqs': 'workBoqs'
+      'workBoqs': 'workBoqs',
+      'workAg' : 'workAg',
+      'workModelling' : 'workModelling',
+      'workFukushima' : 'workFukushima',
+      'workKlink' : 'workKlink'
     },
 
     // Home Route
@@ -48,6 +52,30 @@ jQuery(function($) {
     workBoqs: function() {
       console.log('Navigating to Boqs Page');
       App.views['workBoqs'].render();
+    },
+
+    // Auto Gelato Route
+    workAg: function() {
+      console.log('Navigating to Auto Gelato Page');
+      App.views['workAg'].render();
+    },
+
+    // 3D Modelling
+    workModelling: function() {
+      console.log('Navigating to 3D Modelling Page');
+      App.views['workModelling'].render();
+    },
+
+    // Fukushima
+    workFukushima: function() {
+      console.log('Navigating to Fukushima Page');
+      App.views['workFukushima'].render();
+    },
+
+    // Klink-It 
+    workKlink: function() {
+      console.log('Navigating to Klink-It Page');
+      App.views['workKlink'].render();
     }
 
   });
@@ -67,7 +95,11 @@ jQuery(function($) {
       work: new WorkView(),
       about: new AboutView(),
       contact: new ContactView(),
-      workBoqs: new BoqsView()
+      workBoqs: new BoqsView(),
+      workAg: new AgView(),
+      workModelling: new ModellingView(),
+      workFukushima: new FukushimaView(),
+      workKlink: new KlinkView()
     };
 
   };
@@ -239,6 +271,162 @@ jQuery(function($) {
 
     // Our template ID
     template: '#workBoqs',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        // content: '<h1>YO!</h1>'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
+  // -----------------------------
+  // Auto Gelato View
+  // -----------------------------
+
+  var AgView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#workAg',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        // content: '<h1>YO!</h1>'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
+  // -----------------------------
+  // 3D Modelling View
+  // -----------------------------
+
+  var ModellingView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#workModelling',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        // content: '<h1>YO!</h1>'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
+  // -----------------------------
+  // Fukushima View
+  // -----------------------------
+
+  var FukushimaView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#workFukushima',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        // content: '<h1>YO!</h1>'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
+  // -----------------------------
+  // Fukushima View
+  // -----------------------------
+
+  var KlinkView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#workKlink',
 
     // Initialize View
     initialize: function() {

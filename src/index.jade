@@ -74,15 +74,15 @@ html
 						a(href="/workBoqs") boqs
 							span  / Product
 					li
-						a(href="#") Auto Gelato
+						a(href="/workAg") Auto Gelato
 							span  / Prints
 					li
-						a(href="#") 3D Modelling
+						a(href="/workModelling") 3D Modelling
 					li
-						a(href="#") Fukushima
+						a(href="/workFukushima") Fukushima
 							span  / Infographic
 					li
-						a(href="#") Klink-It
+						a(href="/workKlink") Klink-It
 							span  / App
 
 	script#about(type="text/template")
@@ -108,12 +108,52 @@ html
 					input(class="submit" type="submit" value="send")
 
 	script#workBoqs(type="text/template")
-		div(class="page contact") {{{content}}}
+		div(class="page workBoqs") {{{content}}}
 
 			div(class="content-container")
 				div(class="content-image")
 					a(href="#")
-						img(class="boqsRender1" src="assets/images/color-plasticGOOD.jpg")
+						img(class="side-image" src="assets/images/color-plasticGOOD.jpg")
+				div(class="content-description")
+					p Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+
+	script#workAg(type="text/template")
+		div(class="page workAg") {{{content}}}
+
+			div(class="content-container")
+				div(class="content-image")
+					a(href="#")
+						img(class="side-image" src="assets/images/ag-1.jpg")
+				div(class="content-description")
+					p Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+
+	script#workModelling(type="text/template")
+		div(class="page workModelling") {{{content}}}
+
+			div(class="content-container")
+				div(class="content-image")
+					a(href="#")
+						img(class="side-image" src="assets/images/3d-showcase-1.jpg")
+				div(class="content-description")
+					p Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+
+	script#workFukushima(type="text/template")
+		div(class="page workFukushima") {{{content}}}
+
+			div(class="content-container")
+				div(class="content-image")
+					a(href="#")
+						img(class="side-image" src="assets/images/fukushima-1.gif")
+				div(class="content-description")
+					p Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+
+	script#workKlink(type="text/template")
+		div(class="page workKlink") {{{content}}}
+
+			div(class="content-container")
+				div(class="content-image")
+					a(href="#")
+						img(class="side-image" src="assets/images/klink-1.jpg")
 				div(class="content-description")
 					p Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
 
