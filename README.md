@@ -1,4 +1,4 @@
-# Single Page Application Boilerplate
+# spa-boilerplate (aptly named) is a portfolio site for Interactive Designer, Will Du. This site showcases works from Will Du.
 
 ## Installation
 
@@ -14,6 +14,9 @@
 - [jQuery](http://jquery.com/)
 - [Express](http://expressjs.com/)
 
+Backbone.js was used to create the framework of the project. This also allows a no-refreash page
+Handlebars.js allows the use of page templates
+
 ## Dev Dependancies
 
 - [Gulp](gulpjs.com)
@@ -21,4 +24,7 @@
 - [Gulp Imagemin](https://www.npmjs.org/package/gulp-imagemin)
 - [Gulp Reaname](https://www.npmjs.org/package/gulp-rename)
 - [Gulp Jade](https://www.npmjs.org/package/gulp-jade)
+
+SASS allows for efficient use of css. 
+Jade creates faster, easier markup.
 
