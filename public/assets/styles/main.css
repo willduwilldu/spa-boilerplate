@@ -149,27 +149,44 @@ form {
       background-color: #27ae60; }
 
 /* line 139, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.content-container {
+  overflow: hidden; }
+  /* line 141, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .content-container .content-image {
+    float: left;
+    width: 50%; }
+    /* line 145, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+    .content-container .content-image a img.boqsRender1 {
+      padding: 5px;
+      border: 1px solid #eee;
+      width: 500px; }
+  /* line 149, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .content-container .content-description {
+    float: left;
+    width: 50%; }
+
+/* line 155, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
 .footer {
   padding: 20px; }
-  /* line 142, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 158, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   .footer ul {
     padding: 0;
     margin: 0;
     display: block;
     float: right; }
-    /* line 147, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+    /* line 163, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
     .footer ul li {
       display: inline-block; }
-      /* line 149, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+      /* line 165, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
       .footer ul li .dribbble, .footer ul li .twitter, .footer ul li .github {
         padding: 0 5px; }
-        /* line 151, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+        /* line 167, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
         .footer ul li .dribbble img, .footer ul li .twitter img, .footer ul li .github img {
           width: 20px; }
-          /* line 153, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+          /* line 169, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
           .footer ul li .dribbble img:hover, .footer ul li .twitter img:hover, .footer ul li .github img:hover {
             opacity: 0.8; }
-  /* line 156, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 172, /Users/williamd/Desktop/spa-boilerplate/src/assets/styles/index.sass */
   .footer p {
     display: block;
     float: right;
