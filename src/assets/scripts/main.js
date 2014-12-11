@@ -16,7 +16,8 @@ jQuery(function($) {
       '' : 'home',
       'work': 'work',
       'about': 'about',
-      'contact': 'contact'
+      'contact': 'contact',
+      'workBoqs': 'workBoqs'
     },
 
     // Home Route
@@ -41,6 +42,12 @@ jQuery(function($) {
     contact: function() {
       console.log('Navigating to Contact Page');
       App.views['contact'].render();
+    },
+
+    // Boqs Route
+    workBoqs: function() {
+      console.log('Navigating to Boqs Page');
+      App.views['workBoqs'].render();
     }
 
   });
@@ -59,7 +66,8 @@ jQuery(function($) {
       home: new HomeView(),
       work: new WorkView(),
       about: new AboutView(),
-      contact: new ContactView()
+      contact: new ContactView(),
+      workBoqs: new BoqsView()
     };
 
   };
@@ -203,6 +211,45 @@ jQuery(function($) {
       // Some page data
       this.model.set({
         // content: '<h1>Contact Page</h1>'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
+  // -----------------------------
+  // Boqs View
+  // -----------------------------
+
+  var BoqsView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#workBoqs',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        // content: '<h1>YO!</h1>'
       });
 
     },

@@ -29,6 +29,8 @@ html
 
 					li: a(href="/") Home
 
+					li: a(href="/workBoqs") Boqs
+
 					li: a(href="/work") Work
 
 					li: a(href="/about") About
@@ -71,7 +73,7 @@ html
 
 			<div class="content-container"> 
 				<ul>
-					<li><a href="#">boqs <span>/ Product</span></a></li>
+					<li><a href="/workBoqs">boqs <span>/ Product</span></a></li>
 					<li><a href="#">Auto Gelato <span>/ Prints</span></a></li>
 					<li><a href="#">3D Modelling</a></li>
 					<li><a href="#">Fukushima <span>/ Infographic</span></a></li>
@@ -108,6 +110,10 @@ html
 				</form>
 			</div>
 
+		</div>
+
+	script#workBoqs(type="text/template").
+		<div class="page boqs">{{{content}}}
 		</div>
 
 	// -----------------------------
