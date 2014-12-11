@@ -1,136 +1,130 @@
 doctype html
 html
 
-  head
+	head
 
-  meta(charset="utf-8")
+	meta(charset="utf-8")
 
-  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+	meta(http-equiv="X-UA-Compatible", content="IE=edge")
 
-  title Hello World
+	title Hello World
 
-  meta(name="description", content="Hello World")
+	meta(name="description", content="Hello World")
 
-  meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
+	meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
 
-  link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
+	link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
 
-  body
+	body
 
-  div.wrapper
+		div.wrapper
 
-    header.header
+			header.header
 
-      img(src="assets/images/logo-small.gif")
+				img(src="assets/images/logo-small.gif")
 
-      h1 Interactive Designer
+				h1 Interactive Designer
 
-      ul.nav
+				ul.nav
 
-        li: a(href="/") Home
+					li: a(href="/") Home
 
-        li: a(href="/work") Work
+					li: a(href="/work") Work
 
-        li: a(href="/about") About
+					li: a(href="/about") About
 
-        li: a(href="/contact") Contact
+					li: a(href="/contact") Contact
 
-    div.main
+			div.main
 
-    footer.footer
+			footer.footer
 
-      p Will Du Portfolio Copyright &copy; 2014
+				p Will Du Portfolio Copyright &copy; 2014
 
-      ul
-        li
-          a.dribbble(href="https://dribbble.com/willduwilldu")
-            img(src="assets/images/smi-dribbble.png")
+				ul
+					li
+						a.dribbble(href="https://dribbble.com/willduwilldu")
+							img(src="assets/images/smi-dribbble.png")
 
-        li
-          a.twitter(href="https://twitter.com/willduwilldu")
-            img(src="assets/images/smi-twitter.png")
+					li
+						a.twitter(href="https://twitter.com/willduwilldu")
+							img(src="assets/images/smi-twitter.png")
 
-        li
-          a.github(href="https://github.com/willduwilldu")
-            img(src="assets/images/smi-github.png")
-
-
-  // -----------------------------
-  // Templates
-  // -----------------------------
-
-  script#home(type="text/template").
-    <div class="page home">{{{content}}}
-
-      <div class="home-container"></div>
-
-    </div>
-
-  script#work(type="text/template").
-    <div class="page work">{{{content}}}
-
-      <div class="content-container"> 
-        <ul>
-          <li><a href="#">boqs <span>/ Product</span></a></li>
-          <li><a href="#">Auto Gelato <span>/ Prints</span></a></li>
-          <li><a href="#">3D Modelling</a></li>
-          <li><a href="#">Fukushima <span>/ Infographic</span></a></li>
-          <li><a href="#">Klink-It <span>/ App</span></a></li>
-        </ul>
-      </div>
-
-    </div>
-
-  script#about(type="text/template").
-    <div class="page about">{{{content}}}
-
-      <div class="content-container">
-        <blockquote>“Change is inevitable. Growth is optional.”</blockquote>
-        <p>I’m an interactive designer with a heavy focus on user interface design. The notion of shaping experiences and building trust with the user intrigues me. I often find myself fundamentally asking why something is, and having the passion to create things led me to forge a path in design. I’m currently enrolled in the Web Design Program at Humber College.</p>
-
-        <p>I believe things are always connected somehow. My love for building with LEGOs and drawing nonstop as a child led me to animation and 3D. I entered the Animation Program at Seneca College right out of highschool and after 3 years in many facets of drawing, storyboarding, character development, sculpting and life-drawing, I found a natural fit in 3D modeling which led to several gigs in the animation industry which I specialized in prop and environmental modeling. Life was good for awhile, but after working for 2 years, I realized the state of the industry, itself, is broken and it just wasn’t for me anymore. My love for 3D still grows strong and I like to model in 3D from time to time.</p>
-
-        <p>I like to work on my personal yet, experimental projects all revolving around sketching, painting or printmaking; Anything to do with hands-on crafts. When I’m not staring at a digital screen 15 hours a day, I rock climb and snowboard. A big fan of ASMR, lover of winter, avid mystery-hunter and an enormous nerd for gadgets and future technologies.</p>
-        </div>
-
-    </div>
-
-  script#contact(type="text/template").
-    <div class="page contact">{{{content}}}
-      <div class="content-container">
-        <form action="contact.php" method="post">
-          <span>Name</span>
-          <input type="text" class="name" name="cf_name"><br>
-          <span>E-mail</span>
-          <input type="text" class="email" name="cf_email"><br>
-          <span>Message</span>
-          <textarea class="textarea" name="cf_message"></textarea><br>
-          <input class="submit" type="submit" value="Send">
-        </form>
-      </div>
-    </div>
-
-  script#work-detail(type="text/template").
-    <div class="page contact">{{{content}}}
-      <div class="content-container">
-      </div>
-    </div>
-
-  // -----------------------------
-  // Libraries
-  // -----------------------------
-
-  script(type="text/javascript", src="http://code.jquery.com/jquery-2.1.1.min.js")
-
-  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js")
-
-  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js")
-
-  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
+					li
+						a.github(href="https://github.com/willduwilldu")
+							img(src="assets/images/smi-github.png")
 
 
-  // -----------------------------
-  // Application
-  // -----------------------------
+	// -----------------------------
+	// Templates
+	// -----------------------------
 
-  script(type="text/javascript", src="assets/scripts/main.js")
+	script#home(type="text/template").
+		<div class="page home">{{{content}}}
+
+			<div class="home-container"></div>
+
+		</div>
+
+	script#work(type="text/template").
+		<div class="page work">{{{content}}}
+
+			<div class="content-container"> 
+				<ul>
+					<li><a href="#">boqs <span>/ Product</span></a></li>
+					<li><a href="#">Auto Gelato <span>/ Prints</span></a></li>
+					<li><a href="#">3D Modelling</a></li>
+					<li><a href="#">Fukushima <span>/ Infographic</span></a></li>
+					<li><a href="#">Klink-It <span>/ App</span></a></li>
+				</ul>
+			</div>
+
+		</div>
+
+	script#about(type="text/template").
+		<div class="page about">{{{content}}}
+
+			<div class="content-container">
+				<blockquote>“Change is inevitable. Growth is optional.”</blockquote>
+				<p>I’m an interactive designer with a heavy focus on user interface design. The notion of shaping experiences and building trust with the user intrigues me. I often find myself fundamentally asking why something is, and having the passion to create things led me to forge a path in design. I’m currently enrolled in the Web Design Program at Humber College.</p>
+				<p>I believe things are always connected somehow. My love for building with LEGOs and drawing nonstop as a child led me to animation and 3D. I entered the Animation Program at Seneca College right out of highschool and after 3 years in many facets of drawing, storyboarding, character development, sculpting and life-drawing, I found a natural fit in 3D modeling which led to several gigs in the animation industry which I specialized in prop and environmental modeling. Life was good for awhile, but after working for 2 years, I realized the state of the industry, itself, is broken and it just wasn’t for me anymore. My love for 3D still grows strong and I like to model in 3D from time to time.</p>
+				<p>I like to work on my personal yet, experimental projects all revolving around sketching, painting or printmaking; Anything to do with hands-on crafts. When I’m not staring at a digital screen 15 hours a day, I rock climb and snowboard. A big fan of ASMR, lover of winter, avid mystery-hunter and an enormous nerd for gadgets and future technologies.</p>
+			</div>
+
+		</div>
+
+	script#contact(type="text/template").
+		<div class="page contact">{{{content}}}
+
+			<div class="content-container">
+				<form action="contact.php" method="post">
+					<span>Name</span>
+					<input type="text" class="name" name="cf_name"><br>
+					<span>E-mail</span>
+					<input type="text" class="email" name="cf_email"><br>
+					<span>Message</span>
+					<textarea class="textarea" name="cf_message"></textarea><br>
+					<input class="submit" type="submit" value="Send">
+				</form>
+			</div>
+
+		</div>
+
+	// -----------------------------
+	// Libraries
+	// -----------------------------
+
+	script(type="text/javascript", src="http://code.jquery.com/jquery-2.1.1.min.js")
+
+	script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js")
+
+	script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js")
+
+	script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
+
+
+	// -----------------------------
+	// Application
+	// -----------------------------
+
+	script(type="text/javascript", src="assets/scripts/main.js")
